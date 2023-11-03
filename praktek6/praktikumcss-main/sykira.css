@@ -1,0 +1,81 @@
+body{
+    background-color:rgb(168, 175, 243);
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+}
+h1{
+    text-align: center;
+    color:rgb(25, 113, 228);
+}
+p{
+    text-align: justify;
+    width: fit-content;
+}
+.center{
+    width: 150%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.foto{
+    background-color: black;
+}
+.foto img{
+    width: 70%;
+}
+.cod{
+    margin: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cod p{
+    background-color: aqua;
+    border: 1px dotted rgb(53, 102, 194);
+    text-align: center;
+    font-weight: bold;
+    color:rgb(34, 108, 178);
+}
+
+.jawa {
+    font-size: 3em;
+    color: rgb(40, 91, 150)
+}
+
+#header {
+    background-color: rgb(241, 202, 142);
+    padding: 5px;
+}
+
+blockquote {
+    background-color: rgb(255, 255, 164);
+    text-align: center;
+}
+
+li {
+    display: inline;
+}
+
+.gambar, ul {
+    text-align: center;
+}
+
+.gambar img {
+    width: 24%;
+}
+
+.koleksi {
+    text-align: center;
+    background-color: chocolate;
+}
+
+.koleksi img {
+    width: 24%;
+}
+
+.promo {
+    text-align: center;
+}
+
+.promo h2 {
+    color: red;
+}
