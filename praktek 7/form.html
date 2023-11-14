@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Entry Data Pegawai</title>
+    <link rel="stylesheet" href="raira1.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#" class="text-title">Data Karyawan</a>
+        <a href="#">Master Data</a>
+        <a href="#">Tambah Data</a>
+    </div>
+    <h2>FORM ENTRY DATA PEGAWAI</h2>
+    <table>
+        <tr>
+            <td>
+                <label for="Nama">Nama</label>
+            </td>
+            <td>
+                <input type="text" name="Nama" id="Nama">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Tempat Lahir">Tempat Lahir</label>
+            </td>
+            <td>
+                <input type="text" name="Tempat Lahir" id="Tempat Lahir">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Tanggal Lahir">Tanggal Lahir</label>
+            </td>
+            <td>
+                <input type="date" name="Tanggal Lahir" id="Tanggal Lahir">
+            </td>
+            <tr>
+                <td>
+                    <label for="Alamat">Alamat</label>
+                </td>
+                <td>
+                    <textarea name="Alamat" id="Alamat" cols="30" rows="4"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Telephone">No Telephone</label>
+                </td>
+                <td>
+                    <input type="number" name="Telephone" id="Telephone">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Jabatan">Jabatan</label>
+                </td>
+                <td>
+                    <select name="Jabatan" id="Jabatan">
+                        <option value="">- Jabatan Terbaru -</option>
+                        <option value="=HRD">HRD</option>
+                        <option value="PM">Project MAnager</option>
+                        <option value="Engineer">Engineer</option>
+                    </select>
+                </td>
+             </tr>
+                <td>
+                    <label for="-Status-">Status</label>
+                </td>
+            
+                <td>
+                    <select name="Status" id="Status">
+                        <option value="">- Status Terbaru -</option>
+                        <option value="Magang">Magang</option>
+                        <option value="Kontrak">Kontrak</option>
+                        <option value="Tetap">Tetap</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                    <td>
+                        <button type="submit" class="btn-blue">Simpan</button>
+                        <button type="Reset" class="btn-red">Reset</button>
+                    </td>
+                </td>
+            </tr>
+        </tr>
+    </table>
+</body>
+</html>
