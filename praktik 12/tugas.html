@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From validasi</title>
+</head>
+<body>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+        }
+        label {
+          display: block;
+          margin-bottom: 8px;
+        }
+        input, select {
+          width: 100%;
+          padding: 8px;
+          margin-bottom: 16px;
+          box-sizing: border-box;
+        }
+        button {
+          padding: 10px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+      </style>
+    </head>
+    <body>
+    
+      <h1>Formulir Tiket Kapal</h1>
+    
+      <form id="flightForm" onsubmit="return validateForm()">
+        <label for="nama">Nama Pelanggan:</label>
+        <input type="text" id="nama" name="nama" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="jam">Jam Keberangkatan:</label>
+        <input type="time" id="jam" name="jam" required>
+    
+        <label for="jumlah">Jumlah Tiket:</label>
+        <input type="number" id="jumlah" name="jumlah" min="1" required>
+    
+        <button type="submit">Pesan Tiket</button>
+      </form>
+    
+      <script>
+        function validateForm() {
+          var nama = document.getElementById('nama').value;
+          var email = document.getElementById('email').value;
+          var jam = document.getElementById('jam').value;
+          var jumlah = document.getElementById('jumlah').value;
+    
+          // Validasi Nama (minimal 3 karakter)
+          if (nama.length < 3) {
+            alert('Nama pelanggan harus minimal 3 karakter.');
+            return false;
+          }
+    
+          // Validasi Email menggunakan regex sederhana
+          var emailRegex = /^\S+@\S+\.\S+$/;
+          if (!emailRegex.test(email)) {
+            alert('Format email tidak valid.');
+            return false;
+          }
+    
+          // Validasi Jam Keberangkatan (tidak boleh kosong)
+          if (jam === '') {
+            alert('Jam keberangkatan tidak boleh kosong.');
+            return false;
+          }
+    
+          // Validasi Jumlah Tiket (minimal 1)
+          if (jumlah < 1) {
+            alert('Jumlah tiket harus minimal 1.');
+            return false;
+          }
+    
+          // Jika semua validasi berhasil, formulir dapat disubmit
+          return true;
+        }
+      </script>
+    
+</body>
+</html>

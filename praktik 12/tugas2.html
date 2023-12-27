@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Tugas Image Picker Syakira</title>
+    <script>
+        function image_picker(){
+            const list_image = ["baby shark.png", "gajah.png", "dino.webp"];
+            let pilihan = document.getElementById("option").value;
+            
+            if(pilihan == "bshark"){
+            let select = list_image[0];
+            document.getElementById("gambar").src = `image/${select}`;
+            }
+
+            if(pilihan == "gajah"){
+                let select = list_image[1];
+                document.getElementById("gambar").src = `image/${select}`;
+            }
+
+            if(pilihan == "dino"){
+                let select = list_image[2];
+                document.getElementById("gambar").src = `image/${select}`;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Image Picker</h1>
+
+    <select name="" id="option" onchange="image_picker()">
+        <option value="">Pilih Gambar</option>
+        <option value="bshark">baby shark</option>
+        <option value="gajah">gajah</option>
+        <option value="dino">dino</option>
+    </select>
+
+    <div class="container">
+        <img id="gambar" width="200px">
+    </div>
+</body>
+</html>
